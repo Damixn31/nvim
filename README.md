@@ -17,5 +17,35 @@
   - [wezterm](https://github.com/wez/wezterm) **_(Linux, Macos & Windows)_**
   - [alacritty](https://github.com/alacritty/alacritty) **_(Linux, Macos & Windows)_**
   - [iterm2](https://iterm2.com/) **_(Macos)_**
+
+### Instalacion
+
+## usuarios con neovim instalado
+1. En el caso que tengamos el directorio de nvim ya configurado hacemos un backup si queremos volver a la configuracion anterior que teniamos
+```bash
+mv nvim nvim.bak
+```
+2. Elimina cualquier configuración anterior y directorios de caché
+```bash
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
+```
+## usarios sin neovim instalado
+- Actualizacion del sistema segun en cual estes
+  
+1. instalar neovim
+- debian
+```bash
+sudo apt-get install neovim
+```
+- Arch Linux
+```bash
+sudo pacman -S neovim
+```
+- hacemos el git clone en .config
+```bash
+https://github.com/Damixn31/nvim.git
+```
   
 
